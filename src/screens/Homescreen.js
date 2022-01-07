@@ -198,7 +198,22 @@ const Homescreen = () => {
       </div>
       <div className='grid grid-cols-3 gap-4 px-8'>
         <div className=' '>
-          <div className='flex'></div>
+          <div className='flex'>
+            <img
+              alt='mountain'
+              className=' object-scale-down h-48 w-96'
+              src='https://raw.githubusercontent.com/Kelvinfox1/coin-your-way/38de127625ed674a33b042a9d0576cbeb6b853ae/src/payment.svg'
+            />
+            <div id='body' class='flex flex-col ml-5'>
+              <h4 id='name' class='text-xl font-semibold mb-2'>
+                Local Payment Option
+              </h4>
+              <p id='job' class='text-gray-800 mt-2'>
+                Buy with M-pesa, paypal or bank transfer
+              </p>
+              <div class='flex mt-5'></div>
+            </div>
+          </div>
         </div>
         <div className=''></div>
         <div className=''></div>
