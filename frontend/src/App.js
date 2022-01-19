@@ -6,6 +6,8 @@ import Homescreen from './screens/Homescreen'
 import AboutUs from './screens/AboutUs.js'
 import Blog from './screens/Blog'
 import ContactUs from './screens/ContactUs'
+import LoginScreen from './screens/LoginScreen'
+import RegisterScreen from './screens/RegisterScreen'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
           <Route path='/about_us' component={AboutUs} exact />
           <Route path='/blog' component={Blog} exact />
           <Route path='/contact_us' component={ContactUs} exact />
+          <Route path='/signup' component={RegisterScreen} exact />
+          <Route path='/login' component={LoginScreen} exact />
         </main>
         <Footer />
       </div>

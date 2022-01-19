@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className='relative flex flex-wrap items-center justify-between px-2 py-3 text-gray-700 bg-cyan-50 '>
+        <nav className='relative flex flex-wrap items-center justify-between px-2 py-3 text-gray-700 bg-blue-400 '>
           <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
             <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
               <Link
                 to='/'
-                className='text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-black focus:outline-none focus:shadow-outline'
+                className='text-lg font-bold tracking-widest text-gray-700 uppercase rounded-lg dark-mode:text-black focus:outline-none focus:shadow-outline'
               >
-                COIN YOUR WAY
+                Coinyourway
               </Link>
 
               <button
@@ -38,7 +38,7 @@ const Header = () => {
                     to='/about_us'
                     className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
                   >
-                    <i className='fas fa-info-circle text-lg leading-lg text-black opacity-75'></i>
+                    {/* <i className='fas fa-info-circle text-lg leading-lg text-black opacity-75'></i> */}
                     <span className='ml-2'>About Us</span>
                   </Link>
                 </li>
@@ -47,7 +47,7 @@ const Header = () => {
                     to='/blog'
                     className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
                   >
-                    <i className='fas fa-blog text-lg leading-lg text-black opacity-75'></i>
+                    {/* <i className='fas fa-blog text-lg leading-lg text-black opacity-75'></i> */}
                     <span className='ml-2'>Blog</span>
                   </Link>
                 </li>
@@ -56,8 +56,26 @@ const Header = () => {
                     to='/contact_us'
                     className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
                   >
-                    <i className='fas fa-address-book text-lg leading-lg text-black opacity-75'></i>
+                    {/* <i className='fas fa-address-book text-lg leading-lg text-black opacity-75'></i> */}
                     <span className='ml-2'>Contact us</span>
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link
+                    to='/signup'
+                    className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
+                  >
+                    {/* <i className='fas fa-address-book text-lg leading-lg text-black opacity-75'></i> */}
+                    <span className='ml-2'>Sign up</span>
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link
+                    to='/login'
+                    className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75'
+                  >
+                    {/* <i className='fas fa-address-book text-lg leading-lg text-black opacity-75'></i> */}
+                    <span className='ml-2'>Login in</span>
                   </Link>
                 </li>
               </ul>
