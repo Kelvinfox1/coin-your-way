@@ -5,11 +5,15 @@ import morgan from 'morgan'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 
+import userRoutes from './routes/userRoutes.js'
+
 dotenv.config()
 
 connectDB()
 
 const app = express()
+
+app.use('/api/users', userRoutes)
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
