@@ -25,7 +25,6 @@ import {
   USER_UPDATE_SUCCESS,
   USER_UPDATE_REQUEST,
 } from '../constants/userConstants'
-import { ORDER_LIST_MY_RESET } from '../constants/orderConstants'
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -69,12 +68,11 @@ export const logout = () => (dispatch) => {
   localStorage.removeItem('paymentMethod')
   dispatch({ type: USER_LOGOUT })
   dispatch({ type: USER_DETAILS_RESET })
-  dispatch({ type: ORDER_LIST_MY_RESET })
   dispatch({ type: USER_LIST_RESET })
   document.location.href = '/login'
 }
 
-export const register = (name, email, password) => async (dispatch) => {
+export const registered = (name, email, password) => async (dispatch) => {
   try {
     dispatch({
       type: USER_REGISTER_REQUEST,

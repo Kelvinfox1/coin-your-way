@@ -7,19 +7,23 @@ import connectDB from './config/db.js'
 
 import userRoutes from './routes/userRoutes.js'
 
+import cors from 'cors'
+
 dotenv.config()
 
 connectDB()
 
 const app = express()
 
+app.use(express.json())
+
+app.use(cors())
+
 app.use('/api/users', userRoutes)
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
-
-app.use(express.json())
 
 app.get('/', (req, res) => {
   res.send('The API Server for Coinyourway running successfully....')
